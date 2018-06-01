@@ -11,5 +11,9 @@ angular.module('demo.services', []).factory('UserService', ["$http", "CONSTANTS"
     service.saveUser = function(userDto) {
         return $http.post(CONSTANTS.saveUser, userDto);
     }
+    service.deleteUser = function(id) {
+    	var url = CONSTANTS.deleteUser + id
+    	return $http.delete(url);
+    }
     return service;
 }]);

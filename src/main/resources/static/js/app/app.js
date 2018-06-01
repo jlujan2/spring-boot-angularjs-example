@@ -3,7 +3,8 @@ var demoApp = angular.module('demo', ['ui.bootstrap', 'demo.controllers',
     'demo.services'
 ]);
 demoApp.constant("CONSTANTS", {
-    getUserByIdUrl: "/users/{id}",
+    getUserByIdUrl: "/users/",
     getAllUsers: "/users",
-    saveUser: "/users"
+    saveUser: "/users",
+    deleteUser: "/users/"
 });

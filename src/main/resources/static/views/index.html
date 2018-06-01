@@ -21,6 +21,7 @@
 	<div class="row" ng-repeat="user in allUsers">
 		<div class="">
 			<h3>{{user.name}}</h3>
+			<button ng-click="deleteUser(user.id)">Delete</button>
 		</div>
 	</div>
 </div>

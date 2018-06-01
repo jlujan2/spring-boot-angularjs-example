@@ -36,5 +36,22 @@ module.controller("UserController", ["$scope", "UserService",
                 console.log("no callback");
             });
         }
+        $scope.deleteUser = function(id) {
+        	UserService.deleteUser(id).then(function() {
+                console.log("works");
+                UserService.getAllUsers().then(function(value) {
+                    $scope.allUsers = value.data;
+                }, function(reason) {
+                    console.log("error occured");
+                }, function(value) {
+                    console.log("no callback");
+                });
+        	}, function(reason) {
+                console.log("error occured");
+            }, function(value) {
+                console.log("no callback");
+            });
+        	console.log(id);
+        }
     }
 ]);
