@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.javainuse.entity.Book;
+
 @Service
 public class BookService {
 

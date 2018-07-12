@@ -1,4 +1,4 @@
-package com.javainuse.java;
+package com.javainuse.entity;
 
 public class Book {
 	

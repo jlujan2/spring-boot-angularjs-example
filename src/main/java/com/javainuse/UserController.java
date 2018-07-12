@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javainuse.java.User;
+import com.javainuse.entity.User;
 import com.javainuse.java.UserService;
 
 @RestController

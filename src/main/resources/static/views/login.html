@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="ISO-8859-1">
+    <title>Login Page</title>
+
+<body ng-app="login">
+<hr/>
+<div class="container" > <!-- ng-controller="LoginController" -->
+	<form action="/" id="myLogin">
+		<div>
+			<label>User</label>
+			<input type="text" ng-model="user.name">
+			<label>Password</label>
+			<input type="text" ng-model="user.password">
+			<button type="button" ng-click="login()" >Login</button>
+		</div>
+		</form>
+	</div>
+</body>
+
+<script src="js/lib/angular.min.js"></script> 
+<script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="js/app/LoginController.js"></script> 
+<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+<script src="js/lib/angular-route.min.js"></script>
+</html>

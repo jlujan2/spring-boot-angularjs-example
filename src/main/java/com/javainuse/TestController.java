@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.javainuse.java.Book;
+import com.javainuse.entity.Book;
 import com.javainuse.java.BookService;
 
 @RestController
